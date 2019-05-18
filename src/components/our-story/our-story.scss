@@ -1,0 +1,37 @@
+.our-story {
+  background-color: #f54543;
+  padding: 45px 20px;
+  .about-us,
+  .video {
+    min-height: 273px;
+    @media (min-width: 576px) {
+      height: 273px;
+    }
+    @media (min-width: 768px) {
+      height: 350px;
+    }
+    @media (min-width: 992px) {
+      height: 300px;
+    }
+  }
+  .about-us {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    > h3 {
+      margin: 0;
+    }
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+      width: 100px;
+      height: 100px;
+      > img {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  > h2 {
+    font-size: 3rem;
+    color: #f42f2c;
+    margin: 0;
+  }
+  > p {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    width: 90%;
+    max-width: 630px;
+    text-align: center;
+    @media (min-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+}

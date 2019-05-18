@@ -1,0 +1,37 @@
+footer {
+  padding: 4em 0 2em 0;
+  background: #120f0f;
+  color: #fff;
+  overflow: hidden;
+  h3 {
+    font-size: 1.6rem;
+  }
+  .footer__about {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        font-size: 35px;
+        margin-right: 17px;
+        a {
+          padding: 5px;
+          svg {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .footer__question {
+    span {
+      display: block;
+      margin-bottom: 10px;
+      svg {
+        color: #fff;
+        margin-right: 10px;
+      }
+    }
+  }
+}

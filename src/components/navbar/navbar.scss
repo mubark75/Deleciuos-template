@@ -1,0 +1,78 @@
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #f42f2c;
+  > div {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > h1 {
+      }
+      > div {
+        @media (min-width: 576px) {
+          > ul {
+            display: block;
+            li {
+              display: inline-block;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+      > button {
+        position: fixed;
+        right: 27px;
+        top: 18px;
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        z-index: 9999;
+        background: transparent;
+        border: none;
+        display: unset;
+        cursor: pointer;
+        @media (min-width: 576px) {
+          display: none;
+        }
+        > span {
+          width: 20px;
+          height: 2px;
+          background-color: #f42f2c;
+          display: block;
+          margin: 7px auto;
+          transition: transform 0.1s ease-in-out, visibility 0.1s ease-in-out;
+        }
+      }
+      > button.active {
+        > span {
+          visibility: hidden;
+          &:first-of-type {
+            transform: translateY(9px) rotate(45deg);
+            visibility: visible;
+          }
+          &:last-of-type {
+            transform: translateY(-9px) rotate(-45deg);
+            visibility: visible;
+          }
+        }
+      }
+      a {
+        padding: 5px 10px;
+        color: #fff;
+        transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+        &:hover {
+          background-color: #fff;
+          color: #f42f2c;
+        }
+      }
+      a.active {
+        background-color: #fff;
+        color: #f42f2c;
+      }
+    }
+  }
+}

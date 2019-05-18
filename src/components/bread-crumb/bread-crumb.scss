@@ -1,0 +1,17 @@
+.bread-crumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-top: 73.81px;
+  background-size: cover;
+  > h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    @media (min-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+}
