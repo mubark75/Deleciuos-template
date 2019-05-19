@@ -1,30 +1,51 @@
 nav {
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
-  top: 0;
-  left: 0;
   border-bottom: 1px solid #f42f2c;
   > div {
     > div {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      > h1 {
-      }
       > div {
-        @media (min-width: 576px) {
-          > ul {
+        > ul {
+          position: absolute;
+          right: 36px;
+          top: 60px;
+          background: #fff;
+          z-index: 99999;
+          list-style: none;
+          width: 130px;
+          border: 2px solid rgba(244, 47, 44, 0.7);
+          display: none;
+          @media (min-width: 576px) {
+            position: unset;
+            top: unset;
+            background: unset;
             display: block;
-            li {
+            width: unset;
+            border: unset;
+          }
+          > li {
+            padding: 9px 5px;
+            > a {
+              display: block;
+              width: 117px;
+              @media (min-width: 576px) {
+                width: unset;
+                display: inline-block;
+              }
+            }
+            @media (min-width: 576px) {
               display: inline-block;
               margin-left: 1rem;
             }
           }
         }
+        > ul.show {
+          display: block;
+        }
       }
       > button {
-        position: fixed;
+        position: absolute;
         right: 27px;
         top: 18px;
         padding: 0;
@@ -44,7 +65,7 @@ nav {
           background-color: #f42f2c;
           display: block;
           margin: 7px auto;
-          transition: transform 0.1s ease-in-out, visibility 0.1s ease-in-out;
+          transition: transform 0.2s linear, visibility 0.2s linear;
         }
       }
       > button.active {
@@ -62,16 +83,16 @@ nav {
       }
       a {
         padding: 5px 10px;
-        color: #fff;
+        color: #f42f2c;
         transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
         &:hover {
-          background-color: #fff;
-          color: #f42f2c;
+          background-color: #f42f2c;
+          color: #fff;
         }
       }
       a.active {
-        background-color: #fff;
-        color: #f42f2c;
+        background-color: #f42f2c;
+        color: #fff;
       }
     }
   }

@@ -27,10 +27,10 @@ class Navbar extends Component {
         <div className="container">
           <div>
             <h1>
-              <NavLink to="/">Delecious</NavLink>
+              <NavLink to="/">{siteTitle}</NavLink>
             </h1>
             <div>
-              <ul>
+              <ul className={`${showNavList ? "show" : ""}`}>
                 <li>
                   <NavLink to="/about">About</NavLink>
                 </li>

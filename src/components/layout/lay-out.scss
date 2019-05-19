@@ -53,3 +53,14 @@ hr {
   width: 100%;
   height: 100%;
 }
+.input {
+  display: block;
+    margin: 10px 0 15px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    transition: outline-color .1s ease-in-out;
+    &:focus {
+      outline-color: #f42f2c;
+    }
+}

@@ -7,6 +7,7 @@
   "dependencies": {
     "gatsby": "^2.5.2",
     "gatsby-image": "^2.1.0",
+    "gatsby-plugin-disqus": "^1.0.3",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify-cms": "^4.0.1",
     "gatsby-plugin-offline": "^2.1.0",
@@ -15,6 +16,7 @@
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-remark-images": "^3.0.11",
     "gatsby-source-filesystem": "^2.0.36",
+    "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
     "netlify-cms": "^2.9.1",

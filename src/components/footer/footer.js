@@ -19,7 +19,7 @@ export class footer extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-12 mb-5 footer__about">
-              <h3>About Us</h3>
+              <h3 style={{ fontSize: "1.3rem" }}>About Us</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Possimus fugit accusantium laboriosam unde tempore eligendi
@@ -27,28 +27,37 @@ export class footer extends Component {
                 similique accusamus aliquid suscipit, deleniti vel.
               </p>
               <ul>
-                <li>
-                  <Link to="/">
-                    <FaFacebook />
+                <li
+                  className="d-inline-block mr-4"
+                  style={{ fontSize: "35px" }}
+                >
+                  <Link style={{ padding: "5px" }} to="/">
+                    <FaFacebook style={{ color: "#fff" }} />
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <FaTwitter />
+                <li
+                  className="d-inline-block mr-4"
+                  style={{ fontSize: "35px" }}
+                >
+                  <Link style={{ padding: "5px" }} to="/">
+                    <FaTwitter style={{ color: "#fff" }} />
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <FaInstagram />
+                <li
+                  className="d-inline-block mr-4"
+                  style={{ fontSize: "35px" }}
+                >
+                  <Link style={{ padding: "5px" }} to="/">
+                    <FaInstagram style={{ color: "#fff" }} />
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="col-lg-4 col-md-6 col-12 mb-5 footer__blog">
-              <h3>Recent Blog</h3>
+              <h3 style={{ fontSize: "1.3rem" }}>Recent Blog</h3>
             </div>
             <div className="col-lg-4 col-md-6 col-12 mb-5 footer__question">
-              <h3>Have A Question?</h3>
+              <h3 style={{ fontSize: "1.3rem" }}>Have A Question?</h3>
               <span>
                 <FaMap />
                 203 Fake St. Mountain Viclass="footer_contact_"ew, San
